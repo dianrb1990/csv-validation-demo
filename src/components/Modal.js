@@ -7,7 +7,7 @@ export const Modal = styled.div`
   justify-content: center;
   padding: 20px 20px;
   border-radius: 20px;
-  width: '50%';
+  width: ${(props) => (props.width ? props.width : '50%')};
   position: absolute;
   top: 50%;
   left: 50%;
